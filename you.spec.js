@@ -6,9 +6,9 @@ const { chromium } = require('playwright');
   const page = await context.newPage();
 
   await page.goto("https://tkdcsqa2.tallykhata.com/login", { waitUntil: "domcontentloaded" });
-  await page.fill('input[type="text"]', 'anonno_qa');
+  await page.fill('input[type="text"]', '******');
   await page.waitForTimeout(5000);
-  await page.fill('input[type="password"]', 'tkdc@dmin');
+  await page.fill('input[type="password"]', '******');
   await page.waitForTimeout(5000);
   await page.click('button:has-text("LOG IN")');
   await page.waitForTimeout(5000);
